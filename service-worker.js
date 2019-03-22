@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/solar-radial/precache-manifest.c815a68cd8e601bfb31c8c416a551bfa.js"
+  "/solar-radial/precache-manifest.f6ce33b50afeace065afaf0b5d3dbebc.js"
 );
 
 workbox.clientsClaim();

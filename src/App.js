@@ -134,7 +134,7 @@ class App extends Component {
           </p>
           <p>
             Data source: Typical Meteorological Year, version 3 (TMY3) data sets
-            released by by the National Renewable Energy Laboratory (NREL).
+            released by the National Renewable Energy Laboratory (NREL).
           </p>
         </div>
 

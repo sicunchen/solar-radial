@@ -1,33 +1,63 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.tooltip-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "solar-measure solar-measure" "temp wind";
+  z-index: -100;
+}
+.tooltip-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.solar-measure {
+  grid-area: solar-measure;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temp {
+  grid-area: temp;
+}
+
+.wind {
+  grid-area: wind;
+}
+
+.solar-grid {
+  text-align: center;
+}
+.x-axis line,
+.x-axis path {
+  stroke: #fff;
+}
+.legend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radio-label {
+  margin-right: 0.5em;
+}
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  width: 80%;
+  text-align: justify;
 }
